@@ -198,10 +198,7 @@ level7-custom-resource/
 │
 ├── custom-resource.yaml
 ├── README.md
-├── images/
-│   ├── architecture.png
-│   ├── stack-output.png
-│   └── cloudwatch-delete-log.png
+├── screenshots/
 └── LICENSE
 ```
 
