@@ -8,7 +8,7 @@ The infrastructure was divided into three templates:
 
 * Network Template
 * Compute Template
-* Root Template
+* Root Template 
 
 The root template orchestrates the deployment by creating the child stacks and passing outputs from the network stack as parameters to the compute stack.
 
