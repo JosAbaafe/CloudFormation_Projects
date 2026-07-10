@@ -12,13 +12,13 @@ The CloudFormation template successfully provisioned all required resources. The
 
 ### CloudFormation Stack
 
-![CloudFormation Stack](screenshots/stack-create-complete.png)
+![CloudFormation Stack](screenshoots/stack-create-complete.png)
 
 ### Stack Outputs
 
 The Outputs section displays the automatically generated public IP address and website URL.
 
-![CloudFormation Outputs](screenshots/cloudformation-outputs.png)
+![CloudFormation Outputs](screenshoots/cloudformation-outputs.png)
 
 ---
 
@@ -92,14 +92,14 @@ This demonstrates how CloudFormation determines whether a property can be update
 
 After waiting a few minutes for the UserData script to complete, Apache HTTP Server was installed automatically and the web page became accessible through the public IP address.
 
-![Web Server](screenshots/website-homepage.png)
+![Web Server](screenshoots/website-homepage.png)
 
 ---
 ## EC2 Instance
 
 The deployed EC2 instance is visible in the EC2 console with the instance type specified in the CloudFormation template.
 
-![EC2 Instance](screenshots/ec2-instance.png)
+![EC2 Instance](screenshoots/ec2-instance.png)
 
 ---
 
