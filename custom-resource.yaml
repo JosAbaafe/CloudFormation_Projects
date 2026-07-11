@@ -40,7 +40,7 @@ Resources:
               body = json.dumps({
                   "Status": status,
                   "Reason": f"See CloudWatch Logs: {context.log_stream_name}",
-                  "PhysicalResourceId": context.log_stream_name,
+                  "PhysicalResourceId": data.get("AmiId", context.log_stream_name),
                   "StackId": event["StackId"],
                   "RequestId": event["RequestId"],
                   "LogicalResourceId": event["LogicalResourceId"],
@@ -67,7 +67,7 @@ Resources:
                       ami_id = images[0]["ImageId"]
                       send_response(event, context, "SUCCESS", {"AmiId": ami_id})
                   elif event["RequestType"] in ("Delete"):
-                    ami_id = event.get("ResourceProperties",{}).get("AmiId","Unknown")
+                    ami_id = ami_id = event["PhysicalResourceId"]
                     print("Delete request received.")
                     print("Cleaning up AMI reference: "+ ami_id)
                     send_response(event, context, "SUCCESS", {})
