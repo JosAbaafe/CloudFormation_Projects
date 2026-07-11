@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CloudFormation_Projects
 =======
 # Level 5 – Deploying an EC2 Web Server with CloudFormation
@@ -124,4 +123,4 @@ With an Elastic IP attached, future instance replacements preserve the public IP
 * Security Groups act as virtual firewalls.
 * Outputs simplify retrieving deployment information.
 * Elastic IPs provide stable public addresses across instance replacements.
->>>>>>> level-5/master
+
