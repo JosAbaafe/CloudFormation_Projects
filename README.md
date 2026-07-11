@@ -92,9 +92,7 @@ else:
 
 ```
 
-This doesn't delete the AMI because the Lambda did not create it. Instead, it demonstrates proper lifecycle management and produces an audit trail in CloudWatch Logs.
----
-![Delete Event](screenshots/delete-event.png)
+This doesn't delete the AMI because the Lambda did not create it. Instead, it demonstrates proper lifecycle management and produces an audit trail in CloudWatch Logs
 
 ---
 
@@ -108,11 +106,8 @@ After deleting the CloudFormation stack:
 4. Locate the log stream generated during stack deletion.
 
 The log should contain entries similar to:
-
-```
-Delete request received.
-Cleaning up AMI reference: ami-0123456789abcdef0
-```
+---
+![Delete Event](screenshots/delete-event.png)
 
 This confirms that CloudFormation invoked the Delete lifecycle event successfully.
 
