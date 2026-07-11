@@ -22,7 +22,7 @@ In this project, I implemented a Lambda-backed Custom Resource that dynamically 
 ## Technologies Used
 
 * AWS CloudFormation
-* AWS Lambda (Python 3.12)
+* AWS Lambda
 * Amazon EC2
 * AWS IAM
 * Amazon CloudWatch Logs
